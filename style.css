@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* FONTS 
+
+    font-family: 'Lobster', cursive;
+    font-family: 'Poppins', sans-serif;
+
+*/
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.toggle {
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    transition: 100ms ease-out 0s;
+    border-radius: 20px;
+    background: #BAD1CD;
+}
+
+#seta {
+    margin: 20px;
+    transform: rotate(135deg);
+
+    position: absolute;
+  padding: 15px;
+  box-shadow: 2px -2px 0 1px #000 inset;
+  border: solid transparent;
+  border-width: 0 0 2px 2px;;
+}
+
+.toggle:hover {
+    transition: 200ms ease-out 0s;
+    width: 75px;
+    height: 75px;
+}
+
+
+
+nav h2 {
+    font-family: 'Lobster', cursive;
+    color: pink;
+    letter-spacing: 3px;
+    font-size: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    /* border: solid red; */
+
+    width: 100%;
+    height: 150px;
+    position: fixed;
+
+}
+
+nav img {
+    position: absolute;
+    right: -20px;
+    top: -13px;
+}
+
+nav h2 {
+    /* border: solid green; */
+    flex: 40%;
+    margin-left: 10%;
+    
+}
+
+nav div {
+    justify-content: flex-end;
+    /* border: solid blue; */
+    flex: 40%;
+    margin-right: 10%;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    gap: 30px;
+
+    text-transform: uppercase;
+    
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 300px;
+    gap: 250px;
+    height: 100vh;
+    background: linear-gradient(to right top, #462749, #8332AC );
+
+}
+
+header #ayanami_run {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    animation: run 10s linear infinite;
+}
+
+@keyframes run {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 95%;
+    }
+}
+
+h1 {
+    text-transform: uppercase;
+    width: 600px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 64px;
+    color: #F2D1C9;
+}
+
+h1 span {
+    margin-left: 200px;
+}
+
+.sessao-1 {
+    background-attachment: fixed;
+    background-image: url(./ayanami_wallpaper.jpg.png);
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    color: #F2D1C9;
+}
+
+.sessao-1 #eu {
+    width: 300px;
+}
+
+.sessao-1 div {
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.sessao-1 h2 {
+    border-top: rgb(234, 0, 255) solid 2px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+}
+
+.sessao-1 p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    width: 500px;
+}
+
+.sessao-2 {
+    background-image: url(./Wallpaper-Session-2.jpg);
+    background-size: cover;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+    gap: 100px;
+
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.sessao-2 div {
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sessao-2 h2 {
+    
+    font-size: 42px;
+}
+
+.sessao-2 p {
+    font-size: 24px;
+    width: 500px;
+}
+
+.sessao-3 {
+    background-image: url(./wallpaper-kyoto.jpg);
+    background-size: cover;
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+}
+
+.sessao-3 .nav {
+    top: 0;
+    position: absolute;
+    background: linear-gradient(to right top, #462749, #8332AC );
+    height: 150px;
+    width: 100%;
+}
+
+.modal {
+    display: grid;
+    
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    gap: 30px;
+}
+
+.modalItens {
+    border-radius: 5px;
+    box-shadow: -5px 5px 3px black;
+    width: 300px;
+}
+
+footer {
+    background: linear-gradient(to right top, #462749, #8332AC );
+    height: 150px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
